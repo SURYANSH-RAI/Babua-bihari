@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BABUA BIHARI- Bihar Expert</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+    <style>
+        body {
+            background-image: url('/static/images/image1.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            min-height: 100vh;
+            margin: 0;
+        }
+
+        .chat-container {
+            background-color: rgba(255, 255, 255, 0.5); /* 50% transparent white background */
+            backdrop-filter: blur(5px); /* Optional: adds a slight blur effect */
+        }
+    </style>
+</head>
+<body>
+    <div class="chat-container">
+        <header class="chat-header">
+            <div class="header-content">
+                <h1>BABUA BIHARI</h1>
+                <p>Bihar Expert: Ask anything about Bihar</p>
+            </div>
+        </header>
+
+        <main class="chat-messages" id="chatMessages"></main>
+
+        <div class="input-container">
+            <div class="input-wrapper">
+                <textarea 
+                    id="userInput" 
+                    placeholder="Poochhiye Miya Humre Bihar ke baare me..." 
+                    rows="1"
+                    oninput="autoResize(this)"
+                ></textarea>
+                <button id="sendButton" onclick="sendMessage()">
+                    <svg stroke="currentColor" fill="none" viewBox="0 0 24 24" width="24" height="24">
+                        <path d="M7 11L12 6L17 11M12 12V18" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </svg>
+                </button>
+            </div>
+            <p class="disclaimer"> Responses may include AI-generated content</p>
+        </div>
+    </div>
+    <script src="/static/js/script.js"></script>
+</body>
+</html>
